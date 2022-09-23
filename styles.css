@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --ff-1: "Poppins", sans-serif;
+  --ff-2: "PT Serif", serif;
+
+  --fw-1: 700;
+  --fw-2: 600;
+  --fw-3: 400;
+
+  --clr-black: #000;
+  --clr-footer: #a9a9a9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: none;
+  padding: none;
+}
