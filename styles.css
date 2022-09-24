@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --ff-1: "Poppins", sans-serif;
   --ff-2: "PT Serif", serif;
@@ -12,8 +18,146 @@
   --clr-footer: #a9a9a9;
 }
 
-* {
-  box-sizing: border-box;
-  margin: none;
-  padding: none;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 5vh 3vw 0vw;
+  display: grid;
+  gap: 10vh;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.wrapper__title {
+  width: 100%;
+}
+
+.wrapper__title-title {
+  font-size: 2rem;
+  font-family: var(--ff-2);
+  font-weight: var(--fw-1);
+}
+
+.wrapper_text {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vh;
+}
+
+.wrapper__text-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: var(--ff-1);
+  font-weight: var(--fw-2);
+}
+
+.wrapper__text-txt {
+  font-size: 0.9rem;
+  font-family: var(--ff-1);
+  font-weight: var(--fw-3);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  justify-items: center;
+  gap: 2.5rem;
+}
+
+.card__wrapper-1 {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 1.5rem;
+}
+
+.card__wrapper-2 {
+  display: flex;
+  gap: 2%;
+  margin-top: 3rem;
+}
+
+.card__wrapper-3 {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 1.5rem;
+}
+
+.card__wrapper-4 {
+  display: flex;
+  gap: 2%;
+  margin-top: 3rem;
+}
+
+.card__wrapper-5 {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 1.5rem;
+}
+
+.card__wrapper-6 {
+  display: flex;
+  gap: 2%;
+  margin-top: 3rem;
+}
+
+.card__info {
+  display: grid;
+  width: 100%;
+  gap: 2%;
+}
+
+.card__info-img {
+  width: 8rem;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.card__info-name {
+  font-size: 1rem;
+  font-family: var(--ff-1);
+  font-weight: var(--fw-2);
+}
+
+.card__info-rol {
+  writing-mode: vertical-rl;
+  font-size: 0.9rem;
+  font-family: var(--ff-2);
+  font-weight: var(--fw-3);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-footer);
+  padding: 5% 0;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  .container {
+    margin: 10vh 15vw 0;
+  }
+
+  .content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15vw;
+  }
+
+  .card__info-img {
+    width: 20vw;
+    height: 20rem;
+  }
+
+  .footer {
+    padding: 1% 0;
+  }
 }
